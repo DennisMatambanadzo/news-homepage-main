@@ -296,7 +296,15 @@ article p {
         margin-bottom: 2rem;
 
     }
-
+    .computer-counter{
+        font-size: 1.5rem;
+    }
+    .computer-text-header{
+        font-size: 1rem;
+    }
+    .computer-text-light{
+        font-size: .823rem;
+    }
     .computer-image img {
         max-height: 176px;
         justify-self: flex-start;
