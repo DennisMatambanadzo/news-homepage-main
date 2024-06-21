@@ -125,7 +125,7 @@ body {
     margin-inline: 1rem;
 }
 
-article {
+.articles article {
     color: var(--clr-neutral-off-white);
 
     padding-bottom: 1rem;
@@ -146,6 +146,45 @@ article p {
     font-weight: var(--fw-400);
 }
 
+/* computers */
+.computers {
+    display: flex;
+    margin-inline: 1rem;
+    padding-block: 4rem;
+
+}
+
+.computer-article {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 176px;
+    
+
+}
+
+.computer-text {
+    display: grid;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.computer-counter {
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-soft-orange)
+}
+
+.computer-text-header {
+    color: var(--clr-neutral-very-dark-blue);
+    font-size: 1.2rem;
+    font-weight: var(--fw-700);
+}
+
+.computer-text-light {
+    color: var(--clr-neutral-grayish-blue);
+}
+
 @media screen and (max-width:768px) {
     .nav-menu {
         display: none;
@@ -156,8 +195,8 @@ article p {
         right: 0;
         right: -100%;
         min-width: 55vw;
-        padding: 4rem 0 0 2rem; 
-        
+        padding: 4rem 0 0 2rem;
+
         /* transition: ease-in-out .7s; */
     }
 
@@ -171,10 +210,12 @@ article p {
         filter: blur(90%);
         /* transition: all .7s; */
     }
-    body + .open {
-     background-color: yellow;
+
+    body+.open {
+        background-color: yellow;
     }
-    .nav-menu .open{
+
+    .nav-menu .open {
         transition: ease-in-out .7s;
     }
 
@@ -187,9 +228,6 @@ article p {
         right: 1rem;
     }
 
-    .icon {
-        display: b;
-    }
 
     .hero-image.desktop {
         display: none;
@@ -214,5 +252,16 @@ article p {
 
     .hero-image.mobile {
         display: block;
+    }
+
+    .computers {
+        display: grid;
+
+    }
+    .computer-article{
+        margin-bottom: 2rem;
+    }
+    .computer-text{
+
     }
 }
